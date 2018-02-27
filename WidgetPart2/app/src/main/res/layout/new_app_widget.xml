@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/widget_margin"
+    android:background="@drawable/widget_background"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:background="@drawable/tvbackground"
+        style="@style/widget_views"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/id_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/widget_id"
+            style="@style/widget_text" />
+        <TextView
+            android:id="@+id/id_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="."
+            style="@style/widget_text"  />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/launch_url"
+        style="@style/widget_views"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/URL"
+        android:background="@drawable/tvbackground"/>
+
+    //Add a ‘Tap to update’ TextView//
+
+    <TextView
+        android:id="@+id/update"
+        style="@style/widget_views"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/update"
+        android:background="@drawable/tvbackground"/>
+
+    <LinearLayout
+        android:background="@drawable/tvbackground"
+        style="@style/widget_views"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        //Add a TextView that’ll display our ‘Last Update’ label//
+
+        <TextView
+            android:id="@+id/update_label"
+            style="@style/widget_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/last_update"   />
+
+        //Add the TextView that’ll display the time of the last update//
+
+        <TextView
+            android:id="@+id/update_value"
+            style="@style/widget_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/time" />
+    </LinearLayout>
+
+</LinearLayout>

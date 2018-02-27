@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Widget</string>
+    <string name="widget_id">App Widget ID\u0020</string>
+    <string name="URL">Tap to launch URL</string>
+    <string name="update">Tap to update</string>
+    <string name="last_update">Last Update</string>
+    <string name="time">%1$s</string>
+
+</resources>
